@@ -1,0 +1,27 @@
+{
+  "name": "projeto-angular",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npx ng serve --open",
+    "build": "npx ng build",
+    "test": "npx ng test",
+    "lint": "npx ng lint"
+  },
+  "dependencies": {
+    "@angular/animations": "^16.0.0",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "rxjs": "~7.8.0",
+  "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^16.2.12",
+    "@angular-devkit/build-angular": "^16.2.12",
+    "typescript": "~5.1.0"
+  }
+}
