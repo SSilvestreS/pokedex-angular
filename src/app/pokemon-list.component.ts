@@ -7,7 +7,7 @@ import { PokemonService } from './pokemon.service';
     standalone: false,
     template: `
     <div class="container">
-        <h1>Pokedex</h1>
+        <h1>Pokedex - Kanto</h1>
         
         <div class="sort-buttons">
             <button 
@@ -61,8 +61,9 @@ import { PokemonService } from './pokemon.service';
         }
         h1{
             text-align: center;
-            color: #333;
+            color: white;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .sort-buttons {
             display: flex;
@@ -74,9 +75,9 @@ import { PokemonService } from './pokemon.service';
             padding: 12px 24px;
             font-size: 16px;
             font-weight: 600;
-            border: 2px solid #667eea;
+            border: 2px solid white;
             background: white;
-            color: #667eea;
+            color: #DC0A2D;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -86,9 +87,10 @@ import { PokemonService } from './pokemon.service';
             transform: translateY(-2px);
         }
         .sort-buttons button.active {
-            background: #667eea;
+            background: #DC0A2D;
             color: white;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            border-color: white;
+            box-shadow: 0 4px 12px rgba(220, 10, 45, 0.4);
         }
         .pokemon-grid {
             display: grid;
@@ -106,7 +108,7 @@ import { PokemonService } from './pokemon.service';
         }
         .pokemon-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 16px rgba(220, 10, 45, 0.3);
         }
         .pokemon-card img {
             width: 120px;
@@ -134,28 +136,29 @@ import { PokemonService } from './pokemon.service';
             padding: 12px 24px;
             font-size: 16px;
             font-weight: 600;
-            border: 2px solid #667eea;
+            border: 2px solid white;
             background: white;
-            color: #667eea;
+            color: #DC0A2D;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
         .page-btn:hover:not(:disabled) {
-            background: #667eea;
+            background: #DC0A2D;
             color: white;
             transform: translateY(-2px);
         }
         .page-btn:disabled {
             opacity: 0.4;
             cursor: not-allowed;
-            border-color: #ccc;
-            color: #ccc;
+            border-color: #ddd;
+            color: #ddd;
+            background: #f5f5f5;
         }
         .page-info {
             font-size: 16px;
             font-weight: 600;
-            color: #333;
+            color: #DC0A2D;
             min-width: 150px;
             text-align: center;
         }

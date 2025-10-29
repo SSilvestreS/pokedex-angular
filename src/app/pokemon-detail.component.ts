@@ -81,16 +81,16 @@ import { PokemonService } from './pokemon.service';
       padding: 12px 24px;
       font-size: 16px;
       font-weight: 600;
-      border: 2px solid #667eea;
+      border: 2px solid white;
       background: white;
-      color: #667eea;
+      color: #DC0A2D;
       border-radius: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
       margin-bottom: 20px;
     }
     .back-button:hover {
-      background: #667eea;
+      background: #DC0A2D;
       color: white;
       transform: translateY(-2px);
     }
@@ -105,7 +105,7 @@ import { PokemonService } from './pokemon.service';
       justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
-      border-bottom: 3px solid #667eea;
+      border-bottom: 3px solid #DC0A2D;
       padding-bottom: 15px;
     }
     .detail-header h1 {
@@ -117,7 +117,7 @@ import { PokemonService } from './pokemon.service';
     .pokemon-number {
       font-size: 24px;
       font-weight: bold;
-      color: #667eea;
+      color: #DC0A2D;
     }
     .detail-content {
       display: grid;
@@ -141,7 +141,7 @@ import { PokemonService } from './pokemon.service';
       gap: 25px;
     }
     .info-group h3 {
-      color: #667eea;
+      color: #DC0A2D;
       margin-bottom: 12px;
       font-size: 20px;
     }
@@ -164,11 +164,12 @@ import { PokemonService } from './pokemon.service';
     }
     .type-badge {
       color: white;
-      background: #667eea;
+      background: #DC0A2D;
     }
     .ability-badge {
       background: #f0f0f0;
       color: #333;
+      border: 2px solid #ddd;
     }
     .stats {
       display: flex;
@@ -193,13 +194,13 @@ import { PokemonService } from './pokemon.service';
       overflow: hidden;
     }
     .stat-bar {
-      background: linear-gradient(90deg, #667eea, #764ba2);
+      background: linear-gradient(90deg, #DC0A2D, #EE1515);
       height: 100%;
       transition: width 0.5s ease;
     }
     .stat-value {
       font-weight: bold;
-      color: #667eea;
+      color: #DC0A2D;
       text-align: right;
     }
     .loading {
@@ -208,7 +209,8 @@ import { PokemonService } from './pokemon.service';
       align-items: center;
       min-height: 100vh;
       font-size: 24px;
-      color: #667eea;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
     @media (max-width: 768px) {
       .detail-content {
